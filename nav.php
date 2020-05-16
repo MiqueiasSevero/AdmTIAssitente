@@ -54,7 +54,7 @@
 						   ?>
                         </a>
                         <div class="dropdown-menu border-info">
-						<a class="dropdown-item btn btn-outline-info" href="sair.php">Sair</a>
+						<a class="dropdown-item btn btn-outline-info" href="objetos/sair.php">Sair</a>
                             
                         </div>
                     </li>

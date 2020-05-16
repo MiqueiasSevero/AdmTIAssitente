@@ -9,8 +9,8 @@
 
             <form action="" method="post" enctype="multipart/form-data">
             Select image to upload:
-            <input type="file" name="arqInputCsv" id="arqInputCsv">
-            <input type="submit" value="Upload Image" name="submit">
+            <input type="file" class="custom-file-input" name="arqInputCsv" id="arqInputCsv">
+            <input type="submit" class="btn btn-outline-dark apendchild" value="Upload Image" name="submit">
             </form>
             
         </div>

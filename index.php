@@ -47,7 +47,7 @@
 								</div>
 							</div>
 							<div class="card-body flex border border-secondary rounded">
-								<form method="POST" action="validaLogin.php">
+								<form method="POST" action="objetos/validaLogin.php">
 									<div class="row form-group text-center">
 										<label class="col-sm-12 col-md-12 lead">Usuário ou Email:</label>
 										<i id="imgIconLogin" class="ml-2 mr-2 my-auto material-icons">person</i>
@@ -99,32 +99,39 @@
 						</button>
 					</div>
 					<div class="modal-body">
-							<form>
+							<form method="POST" action="objetos/validaCadastro.php">
 								<div class="form-row">
 									<div class="form-group col-md-8">
 										<label for="nomeCadastro">Nome:</label>
-										<input class="form-control" id="nomeCadastro" type="text" placeholder="Nome...">
+										<input class="form-control" id="nomeCadastro" name="nomeCadastro"type="text" placeholder="Nome...">
 									</div>
 
 								</div>
 								<div class="form-row">
 									<div class="form-group col-md-8">
-										<label for="nomeCadastro">Email:</label>
-										<input class="form-control" id="emailCadastro" type="text" placeholder="Email...">
+										<label for="ultimoSobrenomeCadastro">Último Sobrenome:</label>
+										<input class="form-control" id="nomeCadastro" name="sobreNomeCadastro" type="text" placeholder="Último Sobrenome...">
 									</div>
 
 								</div>
 								<div class="form-row">
 									<div class="form-group col-md-8">
-										<label for="nomeCadastro">Senha:</label>
-										<input class="form-control" id="senhaCadastro" type="password" placeholder="Senha...">
+										<label for="emailCadastro">Email:</label>
+										<input class="form-control" id="emailCadastro" name="emailCadastro" type="email" placeholder="Email...">
 									</div>
 
 								</div>
 								<div class="form-row">
 									<div class="form-group col-md-8">
-										<label for="nomeCadastro">Confirma senha:</label>
-										<input class="form-control" id="confirmaSenhaCadastro" type="password" placeholder="Confirma senha...">
+										<label for="senhaCadastro">Senha:</label>
+										<input class="form-control" id="senhaCadastro" name="senhaCadastro" type="password" placeholder="Senha...">
+									</div>
+
+								</div>
+								<div class="form-row">
+									<div class="form-group col-md-8">
+										<label for="confirmaSenhaCadastro">Confirma senha:</label>
+										<input class="form-control" id="confirmaSenhaCadastro" name="confirmaSenhaCadastro" type="password" placeholder="Confirma senha...">
 									</div>
 
 								</div>
@@ -134,7 +141,7 @@
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-outline-info" data-dismiss="modal">Fechar</button>
-						<button type="button" class="btn btn-outline-primary">Enviar</button>
+						<button type="submit" name="botaoCadastrarUsuario" class="btn btn-outline-primary">Enviar</button>
 					</div>
 					</div>
 				</div>
