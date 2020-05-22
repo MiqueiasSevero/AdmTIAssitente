@@ -35,6 +35,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="corpoGeral.php?dir=paginas&file=auditoria">Calcular Auditoria</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="corpoGeral.php?dir=paginas&file=pesaveis">Código de Balança</a>
+                    </li>
                   
                 </ul>
                 <ul class="navbar-nav ml-auto">
