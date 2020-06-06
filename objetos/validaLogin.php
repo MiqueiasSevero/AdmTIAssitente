@@ -42,7 +42,7 @@ include_once('conexao.php');
                     header("Location:../nav.php");
                 }else{
                     $_SESSION['msg'] = "Usuário ou senha incorreto!";
-                    header("Location:index.php");
+                    header("Location:../index.php");
                 }
             }
 

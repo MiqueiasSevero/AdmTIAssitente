@@ -11,11 +11,12 @@
         
                 }
                 public function buscaProduto($buscaProdutoPesavel){
-                    $sql = "SELECT * FROM `tbl_pesaveis` WHERE `DESCCOMPLETA` LIKE '%".$buscaProdutoPesavel."%' ORDER BY `CODACESSO`;";
+                    $sql = "SELECT * FROM `tbl_pesaveis`;";
                     $stm = $this->pdo->prepare($sql);
                     $stm->execute();
-        
-                    $dados = $stm->fetch(PDO::FETCH_OBJ);
+                    
+                    $dados = $stm->fetchAll(PDO::FETCH_OBJ);
+
                     return $dados;
                 }
             }
@@ -26,8 +27,7 @@
                 $produtosPesaveis = new ProdutosPesaveis(Conexao::getInstance());
                 $result = $produtosPesaveis->buscaProduto($pesquisaProdutoPesavel);
             
-                    print_r($result);
-                    die();
+                    
                          echo ' <table class="table">
                             <thead>
                                 <tr>
@@ -42,14 +42,11 @@
                              foreach ($result as $row ) {
                                 
                 
-                                echo '
-                                    <tr>
-                                        <th scope="row">'. $row->SEQPRODUTO .'</th>
-                                        <td>'. $row->DESCCOMPLETA .'</td>
-                                        <td>'. $row->CODACESSO .'</td>
-                                        <td'. $row->COMPRADOR .'</td>
-                                    </tr>  
-                                ';
+                                echo '<tr>';
+                                      echo'  <th scope="row">' . $row[0]->SEQPRODUTO .'</th>';
+                                       
+                                echo '</tr>'; 
+                                
                              }
 
 

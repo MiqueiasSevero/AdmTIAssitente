@@ -38,6 +38,15 @@
                     <li class="nav-item">
                         <a class="nav-link" href="corpoGeral.php?dir=paginas&file=pesaveis">Código de Balança</a>
                     </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarEquipamentos" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Equipamentos
+                        </a>
+                        <div class="dropdown-menu " aria-labelledby="navbarEquipamentos">
+                            <a class="nav-link dropdown-item text-secondary" href="corpoGeral.php?dir=paginas&file=portasRede">Portas de Rede</a>
+
+                        </div>
+                    </li>
                   
                 </ul>
                 <ul class="navbar-nav ml-auto">
