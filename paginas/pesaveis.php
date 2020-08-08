@@ -14,7 +14,7 @@
                         <div class="col-6">
                             <form method="POST">
                                 <div  class="input-group">
-                                    <input class="form-control" type="search" name="pesquisaProdutoPesavel" praceholder="Buscar...">
+                                    <input class="form-control" type="search" name="pesquisaProdutoPesavel" praceholder="Digite nome ou Código Consinco">
                                     <div class="input-group-append">
                                         <button class="btn btn-outline-info" name="botaoPesquisaPesavel" type="submit">Buscar</button>
                                     </div>   

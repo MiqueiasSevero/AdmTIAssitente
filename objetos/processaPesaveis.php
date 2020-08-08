@@ -11,11 +11,11 @@
         
                 }
                 public function buscaProduto($buscaProdutoPesavel){
-                    $sql = "SELECT * FROM `tbl_pesaveis`;";
+                    $sql = "SELECT * FROM `tbl_pesaveis` where  descricao_produto LIKE '%$buscaProdutoPesavel%' or cod_consinco LIKE '%$buscaProdutoPesavel%';";
                     $stm = $this->pdo->prepare($sql);
                     $stm->execute();
                     
-                    $dados = $stm->fetchAll(PDO::FETCH_OBJ);
+                    $dados = $stm->fetchAll(PDO::FETCH_ASSOC);
 
                     return $dados;
                 }
@@ -43,7 +43,10 @@
                                 
                 
                                 echo '<tr>';
-                                      echo'  <th scope="row">' . $row[0]->SEQPRODUTO .'</th>';
+                                      echo'  <th scope="row">' . $row['cod_consinco'] .'</th>';
+                                      echo'  <th>' . $row['descricao_produto'].'</th>';
+                                      echo'  <th>' . $row['cod_balanca'] .'</th=>';
+                                      echo'  <th>' . $row['comprador'].'</th>';
                                        
                                 echo '</tr>'; 
                                 
