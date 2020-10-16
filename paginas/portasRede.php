@@ -49,7 +49,7 @@
                                 <div  class="input-group ">
                                     <input class="form-control" type="search" name="campoChavePesquisa" praceholder="Buscar...">
                                     <div class="input-group-append">
-                                        <button class="btn btn-outline-info" name="botaoChavePesquisa" type="submit">Buscar</button>
+                                        <button class="btn btn-outline-info" name="botaoChavePesquisa" type="submit" data-toggle="modal" data-target="#modalUpdate">Buscar</button>
                                     </div>   
                                 </div>
                         </form>   
@@ -66,9 +66,10 @@
          <?php
                 
                      require_once('./objetos/processaEquipamentos.php');
-                
+                    
           ?>   
     
     
     
     </div>
+    
